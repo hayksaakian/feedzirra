@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<rss 
+  xmlns:itunes = "http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0"
+  >
  
 <channel>
 <title>All About Everything</title>
@@ -30,10 +32,6 @@
 <pubDate>Wed, 15 Jun 2005 19:00:00 GMT</pubDate>
 <itunes:duration>7:04</itunes:duration>
 <itunes:keywords>salt, pepper, shaker, exciting</itunes:keywords>
-<itunes:image href="http://example.com/podcasts/everything/AllAboutEverything.jpg" />
-<itunes:order>12</itunes:order>
-<itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
-<content:encoded>&lt;p&gt;&lt;strong&gt;TOPIC&lt;/strong&gt;: Gooseneck Options&lt;/p&gt;</content:encoded>
 </item>
  
 <item>
@@ -46,7 +44,6 @@
 <pubDate>Wed, 8 Jun 2005 19:00:00 GMT</pubDate>
 <itunes:duration>4:34</itunes:duration>
 <itunes:keywords>metric, socket, wrenches, tool</itunes:keywords>
-<itunes:image href="http://example.com/podcasts/everything/AllAboutEverything.jpg" />
 </item>
  
 <item>
@@ -59,7 +56,6 @@
 <pubDate>Wed, 1 Jun 2005 19:00:00 GMT</pubDate>
 <itunes:duration>3:59</itunes:duration>
 <itunes:keywords>politics, red, blue, state</itunes:keywords>
-<itunes:image href="http://example.com/podcasts/everything/AllAboutEverything.jpg" />
 </item>
  
 </channel>

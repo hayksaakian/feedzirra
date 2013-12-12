@@ -1,5 +1,6 @@
 begin
   require 'simplecov'
+  require 'json'
   SimpleCov.start do
     add_filter "/spec/"
   end
@@ -16,12 +17,20 @@ def sample_atom_feed
   load_sample("AmazonWebServicesBlog.xml")
 end
 
+def sample_atom_feed_line_breaks
+  load_sample("AtomFeedWithSpacesAroundEquals.xml")
+end
+
 def sample_atom_entry_content
   load_sample("AmazonWebServicesBlogFirstEntryContent.xml")
 end
 
 def sample_itunes_feed
   load_sample("itunes.xml")
+end
+
+def sample_itunes_feed_with_spaces
+  load_sample("ITunesWithSpacesInAttributes.xml")
 end
 
 def sample_rdf_feed
@@ -62,11 +71,11 @@ end
 
 def sample_wfw_feed
   load_sample("PaulDixExplainsNothingWFW.xml")
-end       
+end
 
 def sample_google_docs_list_feed
   load_sample("GoogleDocsList.xml")
-end       
+end
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true

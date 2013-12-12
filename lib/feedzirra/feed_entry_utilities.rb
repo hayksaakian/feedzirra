@@ -37,11 +37,11 @@ module Feedzirra
     end
 
     def sanitize!
-      self.title.sanitize! if self.methods.include?(:title) && self.title
-      self.author.sanitize! if self.methods.include?(:author) && self.author
-      self.summary.sanitize! if self.methods.include?(:summary) && self.summary
-      self.content.sanitize! if self.methods.include?(:content) && self.content
-      self.image.sanitize! if self.methods.include?(:image) && self.image
+      %w[title author summary content image].each do |name|
+        if self.respond_to?(name) && self.send(name).respond_to?(:sanitize!)
+          self.send(name).send :sanitize!
+        end
+      end
     end
 
     alias_method :last_modified, :published
